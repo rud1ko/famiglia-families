@@ -25,5 +25,5 @@ public class Family {
     private Long creatorId;
 
     @OneToMany(mappedBy = "family", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<UserFamily> userFamilies = new ArrayList<>();
+    private List<UserFamily> userFamilies;
 }
